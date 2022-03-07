@@ -120,7 +120,7 @@ HTTP methods:
     ```
 - **PUT:**
     ```bash
-    curl -X POST http://server:8080/ -H "Content-Type: application/json" -d '{"content_type": "{*MIMEType}", "encoding": "{*some_encodings}", "value": "whatever_key_you_want_store"}'
+    curl -X PUT http://server:8080/ -H "Content-Type: application/json" -d '{"content_type": "{*MIMEType}", "encoding": "{*some_encodings}", "value": "whatever_key_you_want_store"}'
     ```
     ```json
     {
