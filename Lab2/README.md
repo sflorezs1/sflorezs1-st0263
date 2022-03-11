@@ -160,5 +160,7 @@ Sadly I had a problem which I could not solve, the machines were able to identif
 ## Conclusions
 
 For the first project we want to create an API (the spec can be found in the Github repository in the Project 1 folder) and a Python client similar to the one used with StrictRedis. We think that implementing just the basic CRUD operations should be relatively easy, except for delete depending on the disk save method we decide to use.
+
 One of the non-functional specifications for this project that we will most certainly use will be partitioning (albeit only statically) using a simple DHT algorithm. Replication will not be a priority, we understand how useful it is however we think we should focus our attention on other features. Our project should be consistent since there will only be 3 data nodes and most likely they will not have replication. Fault tolerance will therefore not be guaranteed, however it will not be completely ignored.
+
 From this lab with Redis we had a good approach to the concept of both key-value databases and distributed databases, although they may seem relatively easier to use given their apparent simplicity, they should not be underestimated at all. They are certainly powerful tools for the functions they are intended to perform and looking at the different methods that Redis contains has given us a good idea of ​​what kind of operations we should handle and how to present them.
