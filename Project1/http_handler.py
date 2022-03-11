@@ -14,6 +14,7 @@ class HTTPMethod(Enum):
     POST = 2
     PUT = 3
 
+
 class HTTPHandler(BaseHTTPRequestHandler):
 
     def __init__(self, request: bytes, client_address: tuple[str, int], server: socketserver.BaseServer, api: API) -> None:
