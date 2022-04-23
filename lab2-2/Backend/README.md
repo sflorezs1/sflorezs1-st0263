@@ -40,3 +40,15 @@ Here we use the internal IPs for the mongo machines as they are in the same VPC.
 ### Create second machine
 - Create a new GCP Compute Engine Virtual Machine using the image `backend-image`. And name it `backend-2`.
 - That's it! Yay!
+
+### Load balancer
+- Create a new GCP Compute Engine Virtual Machine using the image `generic-docker-image`. And name it `backend-balancer`.
+- Reserve the external IP for this machine so it becomes static.
+- Get a domain, create a dns register for `back.domain.com` pointing to the external ip of this machine and follow [this tutorial](https://github.com/st0263eafit/st0263-2261/tree/main/docker-nginx-wordpress-ssl-letsencrypt) to get a certificate and enable ssl on this machine. 
+- SSH into it and run:
+    ```bash
+    sudo apt install docker-compose
+    mkdir balancer
+    cd balancer
+    ```
+- create a `docker-compose.yml` file and paste the following
