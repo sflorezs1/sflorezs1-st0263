@@ -54,4 +54,9 @@ To save a little time we are going to be using some images, the three mongo mach
 - Wait for the image to create and hit the refresh button to check its status.
 - Congrats! your image is now created. It'll help us in the creation of the other front and back-end machines.
 
-    
+
+## What's next?
+- Go into the `Mongo` directory and follow the README.md.
+- Go into the `Backend` directory and follow the README.md.
+- Go into the `Frontend` directory and follow the README.md.
+- The project should be working now.
